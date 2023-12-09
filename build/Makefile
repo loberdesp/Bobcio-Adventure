@@ -57,10 +57,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/siemb/Documents/gitez/fol
+CMAKE_SOURCE_DIR = C:/Users/siemb/ray/raycasting
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/siemb/Documents/gitez/fol/build
+CMAKE_BINARY_DIR = C:/Users/siemb/ray/raycasting/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/Documents/gitez/fol/build/CMakeFiles C:/Users/siemb/Documents/gitez/fol/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/ray/raycasting/build/CMakeFiles C:/Users/siemb/ray/raycasting/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/Documents/gitez/fol/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/ray/raycasting/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named files
+# Target rules for targets named raycasting
 
 # Build rule for target.
-files: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 files
-.PHONY : files
+raycasting: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raycasting
+.PHONY : raycasting
 
 # fast build rule for target.
-files/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/build
-.PHONY : files/fast
+raycasting/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/build
+.PHONY : raycasting/fast
+
+functions.obj: functions.cpp.obj
+.PHONY : functions.obj
+
+# target to build an object file
+functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/functions.cpp.obj
+.PHONY : functions.cpp.obj
+
+functions.i: functions.cpp.i
+.PHONY : functions.i
+
+# target to preprocess a source file
+functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/functions.cpp.i
+.PHONY : functions.cpp.i
+
+functions.s: functions.cpp.s
+.PHONY : functions.s
+
+# target to generate assembly for a file
+functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/functions.cpp.s
+.PHONY : functions.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -142,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... files"
+	@echo "... raycasting"
+	@echo "... functions.obj"
+	@echo "... functions.i"
+	@echo "... functions.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

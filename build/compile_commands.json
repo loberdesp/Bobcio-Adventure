@@ -1,8 +1,14 @@
 [
 {
-  "directory": "C:/Users/siemb/Documents/gitez/fol/build",
-  "command": "\"C:/Program Files/MinGW/bin/g++.exe\"   -g -o CMakeFiles/files.dir/main.cpp.obj -c C:/Users/siemb/Documents/gitez/fol/main.cpp",
-  "file": "C:/Users/siemb/Documents/gitez/fol/main.cpp",
-  "output": "CMakeFiles/files.dir/main.cpp.obj"
+  "directory": "C:/Users/siemb/ray/raycasting/build",
+  "command": "\"C:/Program Files/MinGW/bin/g++.exe\"   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror=return-type -Werror=parentheses -Werror=vla -Werror=array-bounds -Wcast-qual -Wmaybe-uninitialized -o CMakeFiles/raycasting.dir/main.cpp.obj -c C:/Users/siemb/ray/raycasting/main.cpp",
+  "file": "C:/Users/siemb/ray/raycasting/main.cpp",
+  "output": "CMakeFiles/raycasting.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/siemb/ray/raycasting/build",
+  "command": "\"C:/Program Files/MinGW/bin/g++.exe\"   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror=return-type -Werror=parentheses -Werror=vla -Werror=array-bounds -Wcast-qual -Wmaybe-uninitialized -o CMakeFiles/raycasting.dir/functions.cpp.obj -c C:/Users/siemb/ray/raycasting/functions.cpp",
+  "file": "C:/Users/siemb/ray/raycasting/functions.cpp",
+  "output": "CMakeFiles/raycasting.dir/functions.cpp.obj"
 }
 ]
