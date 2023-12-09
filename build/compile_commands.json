@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/siemb/Documents/gitez/fol/build",
+  "command": "\"C:/Program Files/MinGW/bin/g++.exe\"   -g -o CMakeFiles/files.dir/main.cpp.obj -c C:/Users/siemb/Documents/gitez/fol/main.cpp",
+  "file": "C:/Users/siemb/Documents/gitez/fol/main.cpp",
+  "output": "CMakeFiles/files.dir/main.cpp.obj"
+}
+]
