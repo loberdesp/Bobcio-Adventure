@@ -1,3 +1,4 @@
 CMakelists.txt
 main.exe
 .vscode
+build/

@@ -57,10 +57,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/siemb/ray/raycasting
+CMAKE_SOURCE_DIR = C:/Users/siemb/Documents/gitez/fol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/siemb/ray/raycasting/build
+CMAKE_BINARY_DIR = C:/Users/siemb/Documents/gitez/fol/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/ray/raycasting/build/CMakeFiles C:/Users/siemb/ray/raycasting/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/Documents/gitez/fol/build/CMakeFiles C:/Users/siemb/Documents/gitez/fol/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/ray/raycasting/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/siemb/Documents/gitez/fol/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,48 +117,141 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named raycasting
+# Target rules for targets named sdl_test
 
 # Build rule for target.
-raycasting: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raycasting
-.PHONY : raycasting
+sdl_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdl_test
+.PHONY : sdl_test
 
 # fast build rule for target.
-raycasting/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/build
-.PHONY : raycasting/fast
+sdl_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_test.dir/build.make CMakeFiles/sdl_test.dir/build
+.PHONY : sdl_test/fast
 
-functions.obj: functions.cpp.obj
-.PHONY : functions.obj
+#=============================================================================
+# Target rules for targets named sdl_headers_copy
 
-# target to build an object file
-functions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/functions.cpp.obj
-.PHONY : functions.cpp.obj
+# Build rule for target.
+sdl_headers_copy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdl_headers_copy
+.PHONY : sdl_headers_copy
 
-functions.i: functions.cpp.i
-.PHONY : functions.i
+# fast build rule for target.
+sdl_headers_copy/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build.make _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build
+.PHONY : sdl_headers_copy/fast
 
-# target to preprocess a source file
-functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/functions.cpp.i
-.PHONY : functions.cpp.i
+#=============================================================================
+# Target rules for targets named SDL2main
 
-functions.s: functions.cpp.s
-.PHONY : functions.s
+# Build rule for target.
+SDL2main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2main
+.PHONY : SDL2main
 
-# target to generate assembly for a file
-functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/functions.cpp.s
-.PHONY : functions.cpp.s
+# fast build rule for target.
+SDL2main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2main.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2main.dir/build
+.PHONY : SDL2main/fast
+
+#=============================================================================
+# Target rules for targets named SDL2
+
+# Build rule for target.
+SDL2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2
+.PHONY : SDL2
+
+# fast build rule for target.
+SDL2/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2.dir/build
+.PHONY : SDL2/fast
+
+#=============================================================================
+# Target rules for targets named SDL2-static
+
+# Build rule for target.
+SDL2-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2-static
+.PHONY : SDL2-static
+
+# fast build rule for target.
+SDL2-static/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2-static.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2-static.dir/build
+.PHONY : SDL2-static/fast
+
+#=============================================================================
+# Target rules for targets named SDL2_test
+
+# Build rule for target.
+SDL2_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2_test
+.PHONY : SDL2_test
+
+# fast build rule for target.
+SDL2_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build
+.PHONY : SDL2_test/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/uninstall.dir/build.make _deps/sdl2-build/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named SDL2_image
+
+# Build rule for target.
+SDL2_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2_image
+.PHONY : SDL2_image
+
+# fast build rule for target.
+SDL2_image/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2_image-build/CMakeFiles/SDL2_image.dir/build.make _deps/sdl2_image-build/CMakeFiles/SDL2_image.dir/build
+.PHONY : SDL2_image/fast
+
+#=============================================================================
+# Target rules for targets named showanim
+
+# Build rule for target.
+showanim: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 showanim
+.PHONY : showanim
+
+# fast build rule for target.
+showanim/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2_image-build/CMakeFiles/showanim.dir/build.make _deps/sdl2_image-build/CMakeFiles/showanim.dir/build
+.PHONY : showanim/fast
+
+#=============================================================================
+# Target rules for targets named showimage
+
+# Build rule for target.
+showimage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 showimage
+.PHONY : showimage
+
+# fast build rule for target.
+showimage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2_image-build/CMakeFiles/showimage.dir/build.make _deps/sdl2_image-build/CMakeFiles/showimage.dir/build
+.PHONY : showimage/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_test.dir/build.make CMakeFiles/sdl_test.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -166,7 +259,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_test.dir/build.make CMakeFiles/sdl_test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +267,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raycasting.dir/build.make CMakeFiles/raycasting.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_test.dir/build.make CMakeFiles/sdl_test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -185,10 +278,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... raycasting"
-	@echo "... functions.obj"
-	@echo "... functions.i"
-	@echo "... functions.s"
+	@echo "... sdl_headers_copy"
+	@echo "... uninstall"
+	@echo "... SDL2"
+	@echo "... SDL2-static"
+	@echo "... SDL2_image"
+	@echo "... SDL2_test"
+	@echo "... SDL2main"
+	@echo "... sdl_test"
+	@echo "... showanim"
+	@echo "... showimage"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
